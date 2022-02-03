@@ -19,31 +19,35 @@ const Home = (props) => {
       <h1>Redux Clean Code Boilerplate</h1>
       <p>
         Source code:{" "}
-        <strong>
+        <big>
           <a
             href="https://github.com/miladMAPS/redux-clean-code-boilerplate"
             target="_blank"
           >
             github
           </a>
-        </strong>
+        </big>
       </p>
 
       <hr />
       <div>
         <h2>Mapping over server side fetched data:</h2>
-        <ul>
-          {todos.data.map((todo) => (
-            <li>
-              <Link href={`/todo/${todo.id}`}>{todo.title}</Link>
-            </li>
-          ))}
-        </ul>
+        {todos.data ? (
+          <ul>
+            {todos.data.map((todo) => (
+              <li>
+                <Link href={`/todo/${todo.id}`}>{todo.title}</Link>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
       <hr />
       <div>
         <h2>Getting data about one piece of state:</h2>
-        <p>title of first todo: {titleOfFirstTodo}</p>
+        <p>title of first todo: "{titleOfFirstTodo}"</p>
       </div>
     </div>
   );
