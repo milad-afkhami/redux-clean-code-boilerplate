@@ -47,7 +47,9 @@ const Home = (props) => {
       <hr />
       <h2>
         Walkthrough the code:{" "}
-        <a href="https://mili-portfolio.vercel.app/blog/redux-clean-code"></a>
+        <a href="https://mili-portfolio.vercel.app/blog/redux-clean-code">
+          How to Write DRY Redux Code
+        </a>
       </h2>
       <div style={{ border: "2px solid gray" }}>
         <iframe
