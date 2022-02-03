@@ -17,8 +17,9 @@ const Home = (props) => {
   return (
     <div>
       <h1>Redux Clean Code Boilerplate</h1>
-      <p>
-        Source code:{" "}
+
+      <h2>
+        <string>Source code: </string>
         <big>
           <a
             href="https://github.com/miladMAPS/redux-clean-code-boilerplate"
@@ -27,8 +28,7 @@ const Home = (props) => {
             github
           </a>
         </big>
-      </p>
-
+      </h2>
       <hr />
       <div>
         <h2>Mapping over server side fetched data:</h2>
@@ -45,9 +45,19 @@ const Home = (props) => {
         )}
       </div>
       <hr />
-      <div>
-        <h2>Getting data about one piece of state:</h2>
-        <p>title of first todo: "{titleOfFirstTodo}"</p>
+      <h2>
+        Walkthrough the code:{" "}
+        <a href="https://mili-portfolio.vercel.app/blog/redux-clean-code"></a>
+      </h2>
+      <div style={{ border: "2px solid gray" }}>
+        <iframe
+          src="https://mili-portfolio.vercel.app/blog/redux-clean-code"
+          title="Source code of this blog"
+          width="100%"
+          height="500px"
+          class="frame"
+          frameborder="0"
+        />
       </div>
     </div>
   );
